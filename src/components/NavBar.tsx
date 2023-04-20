@@ -3,7 +3,6 @@ import { HStack, Image, Spacer, Text, Button } from "@chakra-ui/react";
 import { MdQuestionMark } from "react-icons/md";
 
 const NavBar = () => {
-  console.log(location);
   return (
     <HStack padding={2}>
       <a href="/">
