@@ -1,20 +1,12 @@
 import { useState } from "react";
 import Buttons from "./Buttons";
-import {
-  Button,
-  Tab,
-  TabList,
-  TabPanel,
-  TabPanels,
-  Tabs,
-  Image,
-  Spacer,
-} from "@chakra-ui/react";
-import testIcon from "../assets/traits/Trait_Icon_3_Brawler.png";
+import { Tab, TabList, TabPanel, TabPanels, Tabs } from "@chakra-ui/react";
 
 export interface selectedButton {
   type: string;
   value: string;
+  id: string;
+  imgSrc: string;
 }
 
 const MainPage = () => {
@@ -87,11 +79,6 @@ const MainPage = () => {
 
   return (
     <div>
-      <Button>
-        <Image src={testIcon} width={6} />
-        <Spacer />
-        Brawler
-      </Button>
       <Tabs
         isFitted
         variant="enclosed"
@@ -134,21 +121,21 @@ const MainPage = () => {
         {chartType === "Frequency" &&
           selectedButtonsFrequency.map((button) => (
             <p key={`${button.type}-${button.value}`}>
-              {button.value} : {button.type}
+              {button.value} : {button.type} : {button.id}
             </p>
           ))}
         {chartType === "Top4Rate" &&
           selectedButtonsTop4Rate.map((button) => (
             <p key={`${button.type}-${button.value}`}>
               {" "}
-              {button.value} : {button.type}
+              {button.value} : {button.type} : {button.id}
             </p>
           ))}
         {chartType === "Winrate" &&
           selectedButtonsWinRate.map((button) => (
             <p key={`${button.type}-${button.value}`}>
               {" "}
-              {button.value} : {button.type}
+              {button.value} : {button.type} : {button.id}
             </p>
           ))}
       </div>

@@ -1,16 +1,11 @@
-import { Button } from "@chakra-ui/react";
+import { Button, Image } from "@chakra-ui/react";
 import { selectedButton } from "./MainPage";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import traits from "../assets/traitsData";
 
 interface Props {
   onSelectButton: (selectedButton: selectedButton) => void;
 }
-
-const sampleButtons = [
-  { type: "trait", value: "OxForce" },
-  { type: "trait", value: "Ace" },
-  { type: "trait", value: "Anima" },
-];
 
 const Buttons = ({ onSelectButton }: Props) => {
   const [selectedButtons, setSelectedButtons] = useState<selectedButton[]>([]);
@@ -31,10 +26,35 @@ const Buttons = ({ onSelectButton }: Props) => {
     onSelectButton(button);
   };
 
+  const loadTraitImg = async () => {
+    const traitButtonsWithImages = await Promise.all(
+      traits.map(async (trait) => {
+        const imgModule = await import(`../assets/traits/${trait.img}.png`);
+        const imgSrc = imgModule.default;
+        return {
+          type: "trait",
+          value: trait.name,
+          id: trait.id,
+          imgSrc: imgSrc,
+        };
+      })
+    );
+    return traitButtonsWithImages;
+  };
+
+  const [traitButtons, setTraitButtons] = useState<selectedButton[]>([]);
+  useEffect(() => {
+    const fetchImages = async () => {
+      const loadedImages = await loadTraitImg();
+      setTraitButtons(loadedImages);
+    };
+    fetchImages();
+  }, []);
+
   return (
     <div style={{ margin: "1rem 0" }}>
-      <h1>Sample Buttons</h1>
-      {sampleButtons.map((button: selectedButton) => (
+      <h1>Traits</h1>
+      {traitButtons.map((button: selectedButton) => (
         <Button
           key={button.value}
           onClick={() => handleButtonClick(button)}
@@ -47,6 +67,7 @@ const Buttons = ({ onSelectButton }: Props) => {
           }
           style={{ margin: "0.5rem" }}
         >
+          <Image src={button.imgSrc} alt={button.value} />
           {button.value}
         </Button>
       ))}
