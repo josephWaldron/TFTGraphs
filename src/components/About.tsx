@@ -91,7 +91,7 @@ const About = () => {
         <Text fontSize="4xl" color="#f3d503">
           Abstract
         </Text>
-        <Text fontSize="2xl" style={{ textIndent: "2em" }} textAlign="left">
+        <Text fontSize="2sm" style={{ textIndent: "2em" }} textAlign="left">
           This research aims to utilize data mining techniques to examine the
           meta evolution (the strategies used in top levels of play that result
           in the best performance) in Riot Games’ popular online strategy game,
