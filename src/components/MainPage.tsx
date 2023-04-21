@@ -1,6 +1,13 @@
 import { useState } from "react";
 import Buttons from "./Buttons";
-import { Tab, TabList, TabPanel, TabPanels, Tabs } from "@chakra-ui/react";
+import {
+  Tab,
+  TabList,
+  TabPanel,
+  TabPanels,
+  Tabs,
+  Text,
+} from "@chakra-ui/react";
 
 export interface selectedButton {
   type: string;
@@ -122,7 +129,10 @@ const MainPage = () => {
           </TabPanel>
         </TabPanels>
       </Tabs>
-
+      <Text align="center">
+        Data set comprises 19,366 challenger games played in TFT set 8 between
+        January 11th, 2023 and March 21st, 2023
+      </Text>
       <div>
         {chartType === "Frequency" &&
           selectedButtonsFrequency.map((button) => (
