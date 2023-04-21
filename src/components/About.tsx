@@ -69,19 +69,24 @@ const About = () => {
           <div style={{ textAlign: "center", margin: "10px" }}>
             <Image src={joseph} width={300} borderRadius={20} />
             <br />
-            <Text fontSize={"3xl"}>Joseph Waldron</Text>
           </div>
           <div
             style={{
               display: "flex",
               flexDirection: "column",
-              justifyContent: "center",
               gap: "4",
               margin: "10px",
+              marginTop: "70px",
             }}
           >
-            <Text fontSize={"2xl"} color="#f3d503">
+            <Text fontSize={"3xl"} color="#f3d503" align="center">
+              Joseph Waldron
+            </Text>
+            <Text fontSize={"2xl"} color="#e64a19">
               Full Stack Developer | Data Scientist
+            </Text>
+            <Text align="center" fontSize={"xl"}>
+              Kean University 2024
             </Text>
             <br />
             <div
