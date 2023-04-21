@@ -18,6 +18,76 @@ const About = () => {
           Home
         </Button>
         <br />
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            margin: "5",
+          }}
+        >
+          <Text fontSize="4xl" color="#f3d503">
+            About the Creator
+          </Text>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              gap: "4",
+              justifyContent: "center",
+            }}
+          >
+            <div style={{ textAlign: "center", margin: "10px" }}>
+              <Image src={joseph} width={300} borderRadius={20} />
+              <br />
+            </div>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "4",
+                margin: "10px",
+                marginTop: "10px",
+              }}
+            >
+              <Text fontSize={"2xl"} color="#f3d503" align="center">
+                Joseph Waldron
+              </Text>
+              <Text fontSize={"xl"} color="#e64a19">
+                Full Stack Developer | Data Scientist
+              </Text>
+              <Text align="center" fontSize={"xl"}>
+                Kean University 2024
+              </Text>
+              <br />
+              <div
+                style={{
+                  textAlign: "center",
+                  display: "flex",
+                  gap: "4",
+                  justifyContent: "center",
+                }}
+              >
+                <Link href="https://github.com/josephWaldron" target="_blank">
+                  <Button colorScheme="green">Github</Button>
+                </Link>{" "}
+                <div style={{ width: "1em" }}></div>{" "}
+                {/* add a div for spacing */}
+                <Link
+                  href="https://portfolio-site-delta-seven.vercel.app/"
+                  target="_blank"
+                >
+                  <Button colorScheme="blue">Portfolio</Button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+        <Text fontSize="4xl" color="#f3d503">
+          Research Poster
+        </Text>
+        <br />
+        <Image src={poster} alt="Research poster" borderRadius={7} />
         <Text fontSize="4xl" color="#f3d503">
           Abstract
         </Text>
@@ -40,76 +110,6 @@ const About = () => {
           balancing changes can lead to substantial shifts in the meta over
           time.
         </Text>
-        <Text fontSize="4xl" color="#f3d503">
-          Research Poster
-        </Text>
-        <br />
-        <Image src={poster} alt="Research poster" borderRadius={7} />
-        <Text fontSize="4xl" color="#f3d503">
-          About the Creator
-        </Text>
-      </div>
-
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          margin: "5",
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            gap: "4",
-            justifyContent: "center",
-          }}
-        >
-          <div style={{ textAlign: "center", margin: "10px" }}>
-            <Image src={joseph} width={300} borderRadius={20} />
-            <br />
-          </div>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              gap: "4",
-              margin: "10px",
-              marginTop: "70px",
-            }}
-          >
-            <Text fontSize={"3xl"} color="#f3d503" align="center">
-              Joseph Waldron
-            </Text>
-            <Text fontSize={"2xl"} color="#e64a19">
-              Full Stack Developer | Data Scientist
-            </Text>
-            <Text align="center" fontSize={"xl"}>
-              Kean University 2024
-            </Text>
-            <br />
-            <div
-              style={{
-                textAlign: "center",
-                display: "flex",
-                gap: "4",
-                justifyContent: "center",
-              }}
-            >
-              <Link href="https://github.com/josephWaldron" target="_blank">
-                <Button colorScheme="green">Github</Button>
-              </Link>{" "}
-              <div style={{ width: "1em" }}></div> {/* add a div for spacing */}
-              <Link
-                href="https://portfolio-site-delta-seven.vercel.app/"
-                target="_blank"
-              >
-                <Button colorScheme="blue">Portfolio</Button>
-              </Link>
-            </div>
-          </div>
-        </div>
       </div>
     </>
   );
