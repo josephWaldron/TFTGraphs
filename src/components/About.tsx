@@ -91,26 +91,30 @@ const About = () => {
         <Text fontSize="4xl" color="#f3d503">
           Abstract
         </Text>
-        <Text fontSize="2sm" style={{ textIndent: "2em" }} textAlign="left">
-          This research aims to utilize data mining techniques to examine the
-          meta evolution (the strategies used in top levels of play that result
-          in the best performance) in Riot Games’ popular online strategy game,
-          Team Fight Tactics (TFT). Focusing on the top 500 players, this
-          research will explore how alterations in the game's balance will
-          influence the TFT meta and how players will adapt to these changes.
-          The data for the analysis will be gathered from the Riot API using a
-          Python program run on a Windows-based server and saved to a MySQL
-          database on a Linux-based server, offering a comprehensive and
-          in-depth large dataset with thousands of games that are critical for
-          this research. The findings of this research will provide valuable
-          insights into the impact of game balance on the player base of TFT.
-          These insights can predict future meta-shifts and inform the
-          development team how small changes can affect their game balance. The
-          results will also contribute to the broader understanding of how
-          balancing changes can lead to substantial shifts in the meta over
-          time.
-        </Text>
       </div>
+      <Text
+        margin={2}
+        fontSize="2sm"
+        style={{ textIndent: "2em" }}
+        textAlign="left"
+      >
+        This research aims to utilize data mining techniques to examine the meta
+        evolution (the strategies used in top levels of play that result in the
+        best performance) in Riot Games’ popular online strategy game, Team
+        Fight Tactics (TFT). Focusing on the top 500 players, this research will
+        explore how alterations in the game's balance will influence the TFT
+        meta and how players will adapt to these changes. The data for the
+        analysis will be gathered from the Riot API using a Python program run
+        on a Windows-based server and saved to a MySQL database on a Linux-based
+        server, offering a comprehensive and in-depth large dataset with
+        thousands of games that are critical for this research. The findings of
+        this research will provide valuable insights into the impact of game
+        balance on the player base of TFT. These insights can predict future
+        meta-shifts and inform the development team how small changes can affect
+        their game balance. The results will also contribute to the broader
+        understanding of how balancing changes can lead to substantial shifts in
+        the meta over time.
+      </Text>
     </>
   );
 };
