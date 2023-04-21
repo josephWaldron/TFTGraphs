@@ -1,4 +1,12 @@
-import { Button, Image } from "@chakra-ui/react";
+import {
+  Button,
+  Card,
+  HStack,
+  Image,
+  Show,
+  Spacer,
+  Tooltip,
+} from "@chakra-ui/react";
 import { selectedButton } from "./MainPage";
 import { useEffect, useState } from "react";
 import traits from "../assets/traitsData";
@@ -9,6 +17,7 @@ interface Props {
 
 const Buttons = ({ onSelectButton }: Props) => {
   const [selectedButtons, setSelectedButtons] = useState<selectedButton[]>([]);
+  const [showTraitButtons, setShowTraitButtons] = useState<boolean>(true);
 
   const handleButtonClick = (button: selectedButton) => {
     const buttonIndex = selectedButtons.findIndex(
@@ -51,26 +60,49 @@ const Buttons = ({ onSelectButton }: Props) => {
     fetchImages();
   }, []);
 
+  const handleToggleAllClick = () => {
+    setShowTraitButtons(!showTraitButtons);
+  };
+
   return (
     <div style={{ margin: "1rem 0" }}>
-      <h1>Traits</h1>
-      {traitButtons.map((button: selectedButton) => (
-        <Button
-          key={button.value}
-          onClick={() => handleButtonClick(button)}
-          colorScheme={
-            selectedButtons.some(
-              (selectedButton) => selectedButton.value === button.value
-            )
-              ? "green"
-              : "gray"
-          }
-          style={{ margin: "0.5rem" }}
+      {showTraitButtons && (
+        <div
+          style={{
+            borderRadius: "8px",
+            backgroundColor: "#292a2d",
+            padding: "10px",
+          }}
         >
-          <Image src={button.imgSrc} alt={button.value} />
-          {button.value}
+          {traitButtons.map((button: selectedButton) => (
+            <Button
+              key={button.value}
+              size={"sm"}
+              onClick={() => handleButtonClick(button)}
+              colorScheme={
+                selectedButtons.some(
+                  (selectedButton) => selectedButton.value === button.value
+                )
+                  ? "blue"
+                  : "gray"
+              }
+              style={{ margin: "5px" }}
+            >
+              <Image src={button.imgSrc} alt={button.value} width="20px" />
+              {button.value}
+            </Button>
+          ))}
+        </div>
+      )}
+      <br />
+      <HStack justify={"space-between"}>
+        <Spacer />
+        <Button onClick={handleToggleAllClick} width="110px">
+          <Tooltip label="Toggle Trait Buttons" aria-label="Select all traits">
+            {showTraitButtons ? "Hide Buttons" : "Show Buttons"}
+          </Tooltip>
         </Button>
-      ))}
+      </HStack>
     </div>
   );
 };

@@ -77,6 +77,9 @@ const MainPage = () => {
     }
   };
 
+  const threhholdExplination =
+    "The threshold for each trait represents the minimum number of units required to activate the corresponding trait bonuses. For instance, if you have at least 2 brawlers on your board, all brawlers will receive a HP bonus";
+
   return (
     <div>
       <Tabs
@@ -104,14 +107,17 @@ const MainPage = () => {
         <TabPanels>
           <TabPanel>
             <h1>{chartType}</h1>
+            <h1>{threhholdExplination}</h1>
             <Buttons onSelectButton={handleButtonClick} />
           </TabPanel>
           <TabPanel>
             <h1>{chartType}</h1>
+            <h1>{threhholdExplination}</h1>
             <Buttons onSelectButton={handleButtonClick} />
           </TabPanel>
           <TabPanel>
             <h1>{chartType}</h1>
+            <h1>{threhholdExplination}</h1>
             <Buttons onSelectButton={handleButtonClick} />
           </TabPanel>
         </TabPanels>
