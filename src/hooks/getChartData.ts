@@ -40,7 +40,7 @@ interface traitData {
 [];
 
 const getChartData = ({ chartType }: Props) => {
-  const [data, setData] = useState<traitData[]>([]);
+  const [data, setData] = useState<any[]>([]);
 
   useEffect(() => {
     switch (chartType) {
