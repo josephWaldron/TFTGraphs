@@ -111,7 +111,7 @@ const MainPage = () => {
       </div> */}
       {/* insert chart here */}
 
-      <ResponsiveContainer width="100%" height={600}>
+      <ResponsiveContainer width="100%" height={400}>
         <LineChart data={chartData}>
           {selectedButtons.map((button, index) => (
             <Line
@@ -123,8 +123,8 @@ const MainPage = () => {
             />
           ))}
           {/* <Line type="monotone" dataKey="ADMIN_Frequency" /> */}
-          <CartesianGrid stroke="#ccc" />
-          <XAxis dataKey="gamedatetime" />
+
+          <XAxis dataKey="gamedatetime" padding={{ left: 30, right: 30 }} />
           <YAxis hide={true} />
           <Tooltip />
           <Legend />
