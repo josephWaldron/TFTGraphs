@@ -1,6 +1,7 @@
 import logo from "../assets/TFT Graphs-logos.jpeg";
 import { HStack, Image, Spacer, Text, Button } from "@chakra-ui/react";
 import { MdQuestionMark } from "react-icons/md";
+import { MdHome } from "react-icons/md";
 
 const NavBar = () => {
   return (
@@ -15,6 +16,16 @@ const NavBar = () => {
         </Text>
       </a>
       <Spacer />
+      <Button
+        rightIcon={<MdHome />}
+        color={"#f3d503"}
+        onClick={() => {
+          location.href = "/";
+        }}
+      >
+        Home
+      </Button>
+      {""}
       <Button
         color="#efd203"
         rightIcon={<MdQuestionMark />}

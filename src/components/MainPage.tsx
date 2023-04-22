@@ -117,13 +117,11 @@ const MainPage = () => {
             <Line
               key={`${button.type}-${button.value}`}
               type="monotone"
-              dataKey={`${button.id}_Frequency`}
+              dataKey={`${button.id}`}
               stroke={colors[index % colors.length]}
               dot={false}
             />
           ))}
-          {/* <Line type="monotone" dataKey="ADMIN_Frequency" /> */}
-
           <XAxis dataKey="gamedatetime" padding={{ left: 30, right: 30 }} />
           <YAxis hide={true} />
           <Tooltip />

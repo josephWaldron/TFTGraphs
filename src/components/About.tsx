@@ -1,23 +1,11 @@
 import { Text, Image, Button, Grid, GridItem, Link } from "@chakra-ui/react";
 import poster from "../assets/ResearchDaysRiotAPI.ppt.png";
-import { MdHome } from "react-icons/md";
 import joseph from "../assets/squareMe.jpg";
 
 const About = () => {
   return (
     <>
       <div style={{ padding: "20px", textAlign: "center" }}>
-        <Button
-          rightIcon={<MdHome />}
-          color={"#f3d503"}
-          onClick={() => {
-            location.href = "/";
-          }}
-          size="lg"
-        >
-          Home
-        </Button>
-        <br />
         <div
           style={{
             display: "flex",
