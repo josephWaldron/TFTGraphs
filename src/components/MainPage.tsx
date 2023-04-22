@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Buttons from "./Buttons";
 import {
   Tab,
@@ -8,6 +8,7 @@ import {
   Tabs,
   Text,
 } from "@chakra-ui/react";
+import getChartData from "../hooks/getChartData";
 
 export interface selectedButton {
   type: string;
@@ -30,6 +31,7 @@ const MainPage = () => {
   const [selectedButtonsWinRate, setSelectedButtonsWinRate] = useState<
     selectedButton[]
   >([]);
+  const [chartData, setChartData] = useState([]);
 
   const handleButtonClick = (buttonClicked: selectedButton) => {
     switch (chartType) {
@@ -154,6 +156,15 @@ const MainPage = () => {
               {button.value} : {button.type} : {button.id}
             </p>
           ))}
+      </div>
+      {/* insert chart here */}
+      {/* print chart data */}
+      <div>
+        {chartData.map((data) => (
+          <p key={`${data.gamedatetime}-${data.gamedatetime}`}>
+            {data.ADMIN_Frequency}
+          </p>
+        ))}
       </div>
     </div>
   );
