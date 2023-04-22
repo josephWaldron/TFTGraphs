@@ -1,12 +1,4 @@
-import {
-  Button,
-  Card,
-  HStack,
-  Image,
-  Show,
-  Spacer,
-  Tooltip,
-} from "@chakra-ui/react";
+import { Button, HStack, Image, Spacer, Tooltip } from "@chakra-ui/react";
 import { selectedButton } from "./MainPage";
 import { useEffect, useState } from "react";
 import traits from "../assets/traitsData";
@@ -43,7 +35,7 @@ const Buttons = ({ onSelectButton }: Props) => {
         return {
           type: "trait",
           value: trait.name,
-          id: trait.id,
+          id: trait.id.split("Set8_")[1],
           imgSrc: imgSrc,
         };
       })
@@ -65,13 +57,14 @@ const Buttons = ({ onSelectButton }: Props) => {
   };
 
   return (
-    <div style={{ margin: "1rem 0" }}>
+    <div style={{ margin: "1rem 0", marginBottom: "20px" }}>
       {showTraitButtons && (
         <div
           style={{
             borderRadius: "8px",
             backgroundColor: "#292a2d",
             padding: "10px",
+            marginBottom: "10px",
           }}
         >
           {traitButtons.map((button: selectedButton) => (
@@ -94,13 +87,16 @@ const Buttons = ({ onSelectButton }: Props) => {
           ))}
         </div>
       )}
-      <br />
+
       <HStack justify={"space-between"}>
         <Spacer />
         <Button onClick={handleToggleAllClick} width="110px">
           <Tooltip label="Toggle Trait Buttons" aria-label="Select all traits">
             {showTraitButtons ? "Hide Buttons" : "Show Buttons"}
           </Tooltip>
+        </Button>
+        <Button colorScheme="red" onClick={() => window.location.reload()}>
+          Reset
         </Button>
       </HStack>
     </div>

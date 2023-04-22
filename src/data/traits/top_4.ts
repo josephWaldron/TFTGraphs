@@ -1,7 +1,7 @@
 export default [
   {
     gamedatetime: "2023-01-14",
-    ADMIN_Frequency: 0.5333333333333333,
+    Admin_Frequency: 0.5333333333333333,
     AnimaSquad_Frequency: 0.13333333333333333,
     Arsenal_Frequency: 1.3333333333333333,
     Civilian_Frequency: 1.4,
@@ -31,7 +31,7 @@ export default [
   },
   {
     gamedatetime: "2023-01-15",
-    ADMIN_Frequency: 0.21052631578947367,
+    Admin_Frequency: 0.21052631578947367,
     AnimaSquad_Frequency: 0.21052631578947367,
     Arsenal_Frequency: 1.0,
     Civilian_Frequency: 1.3157894736842106,
@@ -61,7 +61,7 @@ export default [
   },
   {
     gamedatetime: "2023-01-16",
-    ADMIN_Frequency: 0.46875,
+    Admin_Frequency: 0.46875,
     AnimaSquad_Frequency: 0.125,
     Arsenal_Frequency: 1.1875,
     Civilian_Frequency: 1.1875,
@@ -91,7 +91,7 @@ export default [
   },
   {
     gamedatetime: "2023-01-17",
-    ADMIN_Frequency: 0.84,
+    Admin_Frequency: 0.84,
     AnimaSquad_Frequency: 0.44,
     Arsenal_Frequency: 0.76,
     Civilian_Frequency: 1.24,
@@ -121,7 +121,7 @@ export default [
   },
   {
     gamedatetime: "2023-01-18",
-    ADMIN_Frequency: 0.75,
+    Admin_Frequency: 0.75,
     AnimaSquad_Frequency: 0.16666666666666666,
     Arsenal_Frequency: 1.0,
     Civilian_Frequency: 1.0,
@@ -151,7 +151,7 @@ export default [
   },
   {
     gamedatetime: "2023-01-19",
-    ADMIN_Frequency: 0.5625,
+    Admin_Frequency: 0.5625,
     AnimaSquad_Frequency: 0.25,
     Arsenal_Frequency: 1.1875,
     Civilian_Frequency: 0.8125,
@@ -181,7 +181,7 @@ export default [
   },
   {
     gamedatetime: "2023-01-20",
-    ADMIN_Frequency: 0.6610169491525424,
+    Admin_Frequency: 0.6610169491525424,
     AnimaSquad_Frequency: 0.1864406779661017,
     Arsenal_Frequency: 0.8983050847457628,
     Civilian_Frequency: 1.3220338983050848,
@@ -211,7 +211,7 @@ export default [
   },
   {
     gamedatetime: "2023-01-21",
-    ADMIN_Frequency: 0.5178571428571429,
+    Admin_Frequency: 0.5178571428571429,
     AnimaSquad_Frequency: 0.21428571428571427,
     Arsenal_Frequency: 0.8392857142857143,
     Civilian_Frequency: 1.1785714285714286,
@@ -241,7 +241,7 @@ export default [
   },
   {
     gamedatetime: "2023-01-22",
-    ADMIN_Frequency: 0.46,
+    Admin_Frequency: 0.46,
     AnimaSquad_Frequency: 0.22,
     Arsenal_Frequency: 1.18,
     Civilian_Frequency: 1.34,
@@ -271,7 +271,7 @@ export default [
   },
   {
     gamedatetime: "2023-01-23",
-    ADMIN_Frequency: 0.6197183098591549,
+    Admin_Frequency: 0.6197183098591549,
     AnimaSquad_Frequency: 0.15492957746478872,
     Arsenal_Frequency: 1.056338028169014,
     Civilian_Frequency: 1.2816901408450705,
@@ -301,7 +301,7 @@ export default [
   },
   {
     gamedatetime: "2023-01-24",
-    ADMIN_Frequency: 0.5934959349593496,
+    Admin_Frequency: 0.5934959349593496,
     AnimaSquad_Frequency: 0.2926829268292683,
     Arsenal_Frequency: 0.7967479674796748,
     Civilian_Frequency: 1.2520325203252032,
@@ -331,7 +331,7 @@ export default [
   },
   {
     gamedatetime: "2023-01-25",
-    ADMIN_Frequency: 0.5934959349593496,
+    Admin_Frequency: 0.5934959349593496,
     AnimaSquad_Frequency: 0.22764227642276422,
     Arsenal_Frequency: 0.967479674796748,
     Civilian_Frequency: 1.1788617886178863,
@@ -361,7 +361,7 @@ export default [
   },
   {
     gamedatetime: "2023-01-26",
-    ADMIN_Frequency: 0.7007299270072993,
+    Admin_Frequency: 0.7007299270072993,
     AnimaSquad_Frequency: 0.2116788321167883,
     Arsenal_Frequency: 0.927007299270073,
     Civilian_Frequency: 1.1897810218978102,
@@ -391,7 +391,7 @@ export default [
   },
   {
     gamedatetime: "2023-01-27",
-    ADMIN_Frequency: 0.7268722466960352,
+    Admin_Frequency: 0.7268722466960352,
     AnimaSquad_Frequency: 0.09251101321585903,
     Arsenal_Frequency: 0.8898678414096917,
     Civilian_Frequency: 1.1277533039647578,
@@ -421,7 +421,7 @@ export default [
   },
   {
     gamedatetime: "2023-01-28",
-    ADMIN_Frequency: 0.6218487394957983,
+    Admin_Frequency: 0.6218487394957983,
     AnimaSquad_Frequency: 0.12184873949579832,
     Arsenal_Frequency: 1.0588235294117647,
     Civilian_Frequency: 1.096638655462185,
@@ -451,7 +451,7 @@ export default [
   },
   {
     gamedatetime: "2023-01-29",
-    ADMIN_Frequency: 0.6666666666666666,
+    Admin_Frequency: 0.6666666666666666,
     AnimaSquad_Frequency: 0.10582010582010581,
     Arsenal_Frequency: 1.1851851851851851,
     Civilian_Frequency: 1.208994708994709,
@@ -481,7 +481,7 @@ export default [
   },
   {
     gamedatetime: "2023-01-30",
-    ADMIN_Frequency: 0.6138107416879796,
+    Admin_Frequency: 0.6138107416879796,
     AnimaSquad_Frequency: 0.0792838874680307,
     Arsenal_Frequency: 1.173913043478261,
     Civilian_Frequency: 1.1713554987212276,
@@ -511,7 +511,7 @@ export default [
   },
   {
     gamedatetime: "2023-01-31",
-    ADMIN_Frequency: 0.5687103594080338,
+    Admin_Frequency: 0.5687103594080338,
     AnimaSquad_Frequency: 0.12684989429175475,
     Arsenal_Frequency: 1.255813953488372,
     Civilian_Frequency: 1.145877378435518,
@@ -541,7 +541,7 @@ export default [
   },
   {
     gamedatetime: "2023-02-01",
-    ADMIN_Frequency: 0.5220125786163522,
+    Admin_Frequency: 0.5220125786163522,
     AnimaSquad_Frequency: 0.09433962264150944,
     Arsenal_Frequency: 1.3312368972746331,
     Civilian_Frequency: 1.2117400419287212,
@@ -571,7 +571,7 @@ export default [
   },
   {
     gamedatetime: "2023-02-02",
-    ADMIN_Frequency: 0.42359767891682787,
+    Admin_Frequency: 0.42359767891682787,
     AnimaSquad_Frequency: 0.09284332688588008,
     Arsenal_Frequency: 1.3365570599613152,
     Civilian_Frequency: 1.1102514506769825,
@@ -601,7 +601,7 @@ export default [
   },
   {
     gamedatetime: "2023-02-03",
-    ADMIN_Frequency: 0.41505791505791506,
+    Admin_Frequency: 0.41505791505791506,
     AnimaSquad_Frequency: 0.0945945945945946,
     Arsenal_Frequency: 1.337837837837838,
     Civilian_Frequency: 1.164092664092664,
@@ -631,7 +631,7 @@ export default [
   },
   {
     gamedatetime: "2023-02-04",
-    ADMIN_Frequency: 0.43320610687022904,
+    Admin_Frequency: 0.43320610687022904,
     AnimaSquad_Frequency: 0.08778625954198473,
     Arsenal_Frequency: 1.3950381679389312,
     Civilian_Frequency: 1.1641221374045803,
@@ -661,7 +661,7 @@ export default [
   },
   {
     gamedatetime: "2023-02-05",
-    ADMIN_Frequency: 0.4409171075837742,
+    Admin_Frequency: 0.4409171075837742,
     AnimaSquad_Frequency: 0.08465608465608465,
     Arsenal_Frequency: 1.4638447971781305,
     Civilian_Frequency: 1.2627865961199294,
@@ -691,7 +691,7 @@ export default [
   },
   {
     gamedatetime: "2023-02-06",
-    ADMIN_Frequency: 0.39945652173913043,
+    Admin_Frequency: 0.39945652173913043,
     AnimaSquad_Frequency: 0.08695652173913043,
     Arsenal_Frequency: 1.4456521739130435,
     Civilian_Frequency: 1.1820652173913044,
@@ -721,7 +721,7 @@ export default [
   },
   {
     gamedatetime: "2023-02-07",
-    ADMIN_Frequency: 0.4584615384615385,
+    Admin_Frequency: 0.4584615384615385,
     AnimaSquad_Frequency: 0.08923076923076922,
     Arsenal_Frequency: 1.2953846153846154,
     Civilian_Frequency: 0.9876923076923076,
@@ -751,7 +751,7 @@ export default [
   },
   {
     gamedatetime: "2023-02-08",
-    ADMIN_Frequency: 0.4341317365269461,
+    Admin_Frequency: 0.4341317365269461,
     AnimaSquad_Frequency: 0.09281437125748503,
     Arsenal_Frequency: 1.3922155688622755,
     Civilian_Frequency: 1.1377245508982037,
@@ -781,7 +781,7 @@ export default [
   },
   {
     gamedatetime: "2023-02-09",
-    ADMIN_Frequency: 0.5246376811594203,
+    Admin_Frequency: 0.5246376811594203,
     AnimaSquad_Frequency: 0.1681159420289855,
     Arsenal_Frequency: 1.2405797101449276,
     Civilian_Frequency: 1.1884057971014492,
@@ -811,7 +811,7 @@ export default [
   },
   {
     gamedatetime: "2023-02-10",
-    ADMIN_Frequency: 0.5336426914153132,
+    Admin_Frequency: 0.5336426914153132,
     AnimaSquad_Frequency: 0.21345707656612528,
     Arsenal_Frequency: 1.3781902552204177,
     Civilian_Frequency: 1.2784222737819027,
@@ -841,7 +841,7 @@ export default [
   },
   {
     gamedatetime: "2023-02-11",
-    ADMIN_Frequency: 0.5,
+    Admin_Frequency: 0.5,
     AnimaSquad_Frequency: 0.2634146341463415,
     Arsenal_Frequency: 1.4195121951219511,
     Civilian_Frequency: 1.2951219512195122,
@@ -871,7 +871,7 @@ export default [
   },
   {
     gamedatetime: "2023-02-12",
-    ADMIN_Frequency: 0.6485714285714286,
+    Admin_Frequency: 0.6485714285714286,
     AnimaSquad_Frequency: 0.24285714285714285,
     Arsenal_Frequency: 1.3257142857142856,
     Civilian_Frequency: 1.0914285714285714,
@@ -901,7 +901,7 @@ export default [
   },
   {
     gamedatetime: "2023-02-13",
-    ADMIN_Frequency: 0.5446428571428571,
+    Admin_Frequency: 0.5446428571428571,
     AnimaSquad_Frequency: 0.27380952380952384,
     Arsenal_Frequency: 1.3511904761904763,
     Civilian_Frequency: 1.306547619047619,
@@ -931,7 +931,7 @@ export default [
   },
   {
     gamedatetime: "2023-02-14",
-    ADMIN_Frequency: 0.6218905472636815,
+    Admin_Frequency: 0.6218905472636815,
     AnimaSquad_Frequency: 0.2462686567164179,
     Arsenal_Frequency: 1.455223880597015,
     Civilian_Frequency: 1.1865671641791045,
@@ -961,7 +961,7 @@ export default [
   },
   {
     gamedatetime: "2023-02-15",
-    ADMIN_Frequency: 0.5169230769230769,
+    Admin_Frequency: 0.5169230769230769,
     AnimaSquad_Frequency: 0.2676923076923077,
     Arsenal_Frequency: 1.4615384615384615,
     Civilian_Frequency: 1.3015384615384615,
@@ -991,7 +991,7 @@ export default [
   },
   {
     gamedatetime: "2023-02-16",
-    ADMIN_Frequency: 0.5456570155902004,
+    Admin_Frequency: 0.5456570155902004,
     AnimaSquad_Frequency: 0.21603563474387527,
     Arsenal_Frequency: 1.489977728285078,
     Civilian_Frequency: 1.2739420935412027,
@@ -1021,7 +1021,7 @@ export default [
   },
   {
     gamedatetime: "2023-02-17",
-    ADMIN_Frequency: 0.5280898876404494,
+    Admin_Frequency: 0.5280898876404494,
     AnimaSquad_Frequency: 0.2606741573033708,
     Arsenal_Frequency: 1.5056179775280898,
     Civilian_Frequency: 1.3078651685393259,
@@ -1051,7 +1051,7 @@ export default [
   },
   {
     gamedatetime: "2023-02-18",
-    ADMIN_Frequency: 0.4987405541561713,
+    Admin_Frequency: 0.4987405541561713,
     AnimaSquad_Frequency: 0.3047858942065491,
     Arsenal_Frequency: 1.4634760705289673,
     Civilian_Frequency: 1.2896725440806045,
@@ -1081,7 +1081,7 @@ export default [
   },
   {
     gamedatetime: "2023-02-19",
-    ADMIN_Frequency: 0.46,
+    Admin_Frequency: 0.46,
     AnimaSquad_Frequency: 0.26857142857142857,
     Arsenal_Frequency: 1.54,
     Civilian_Frequency: 1.3771428571428572,
@@ -1111,7 +1111,7 @@ export default [
   },
   {
     gamedatetime: "2023-02-20",
-    ADMIN_Frequency: 0.5392953929539296,
+    Admin_Frequency: 0.5392953929539296,
     AnimaSquad_Frequency: 0.33604336043360433,
     Arsenal_Frequency: 1.3821138211382114,
     Civilian_Frequency: 1.2682926829268293,
@@ -1141,7 +1141,7 @@ export default [
   },
   {
     gamedatetime: "2023-02-21",
-    ADMIN_Frequency: 0.54,
+    Admin_Frequency: 0.54,
     AnimaSquad_Frequency: 0.355,
     Arsenal_Frequency: 1.45,
     Civilian_Frequency: 1.305,
@@ -1171,7 +1171,7 @@ export default [
   },
   {
     gamedatetime: "2023-02-22",
-    ADMIN_Frequency: 0.5253333333333333,
+    Admin_Frequency: 0.5253333333333333,
     AnimaSquad_Frequency: 0.296,
     Arsenal_Frequency: 1.5093333333333334,
     Civilian_Frequency: 1.2906666666666666,
@@ -1201,7 +1201,7 @@ export default [
   },
   {
     gamedatetime: "2023-02-23",
-    ADMIN_Frequency: 0.6204819277108434,
+    Admin_Frequency: 0.6204819277108434,
     AnimaSquad_Frequency: 0.2620481927710843,
     Arsenal_Frequency: 1.2680722891566265,
     Civilian_Frequency: 1.2560240963855422,
@@ -1231,7 +1231,7 @@ export default [
   },
   {
     gamedatetime: "2023-02-24",
-    ADMIN_Frequency: 0.6888888888888889,
+    Admin_Frequency: 0.6888888888888889,
     AnimaSquad_Frequency: 0.2716049382716049,
     Arsenal_Frequency: 1.0493827160493827,
     Civilian_Frequency: 1.217283950617284,
@@ -1261,7 +1261,7 @@ export default [
   },
   {
     gamedatetime: "2023-02-25",
-    ADMIN_Frequency: 0.6142506142506142,
+    Admin_Frequency: 0.6142506142506142,
     AnimaSquad_Frequency: 0.3464373464373464,
     Arsenal_Frequency: 1.00982800982801,
     Civilian_Frequency: 1.199017199017199,
@@ -1291,7 +1291,7 @@ export default [
   },
   {
     gamedatetime: "2023-02-26",
-    ADMIN_Frequency: 0.6942355889724311,
+    Admin_Frequency: 0.6942355889724311,
     AnimaSquad_Frequency: 0.3107769423558897,
     Arsenal_Frequency: 1.0726817042606516,
     Civilian_Frequency: 1.2230576441102756,
@@ -1321,7 +1321,7 @@ export default [
   },
   {
     gamedatetime: "2023-02-27",
-    ADMIN_Frequency: 0.6050632911392405,
+    Admin_Frequency: 0.6050632911392405,
     AnimaSquad_Frequency: 0.28860759493670884,
     Arsenal_Frequency: 1.0886075949367089,
     Civilian_Frequency: 1.1721518987341772,
@@ -1351,7 +1351,7 @@ export default [
   },
   {
     gamedatetime: "2023-02-28",
-    ADMIN_Frequency: 0.5931818181818181,
+    Admin_Frequency: 0.5931818181818181,
     AnimaSquad_Frequency: 0.3431818181818182,
     Arsenal_Frequency: 1.1181818181818182,
     Civilian_Frequency: 1.175,
@@ -1381,7 +1381,7 @@ export default [
   },
   {
     gamedatetime: "2023-03-01",
-    ADMIN_Frequency: 0.635678391959799,
+    Admin_Frequency: 0.635678391959799,
     AnimaSquad_Frequency: 0.3241206030150754,
     Arsenal_Frequency: 1.0778894472361809,
     Civilian_Frequency: 1.1608040201005025,
@@ -1411,7 +1411,7 @@ export default [
   },
   {
     gamedatetime: "2023-03-02",
-    ADMIN_Frequency: 0.679814385150812,
+    Admin_Frequency: 0.679814385150812,
     AnimaSquad_Frequency: 0.27842227378190254,
     Arsenal_Frequency: 1.0580046403712298,
     Civilian_Frequency: 1.1879350348027842,
@@ -1441,7 +1441,7 @@ export default [
   },
   {
     gamedatetime: "2023-03-03",
-    ADMIN_Frequency: 0.6642156862745098,
+    Admin_Frequency: 0.6642156862745098,
     AnimaSquad_Frequency: 0.32107843137254904,
     Arsenal_Frequency: 1.071078431372549,
     Civilian_Frequency: 1.1323529411764706,
@@ -1471,7 +1471,7 @@ export default [
   },
   {
     gamedatetime: "2023-03-04",
-    ADMIN_Frequency: 0.6930455635491607,
+    Admin_Frequency: 0.6930455635491607,
     AnimaSquad_Frequency: 0.2517985611510791,
     Arsenal_Frequency: 1.0,
     Civilian_Frequency: 1.170263788968825,
@@ -1501,7 +1501,7 @@ export default [
   },
   {
     gamedatetime: "2023-03-05",
-    ADMIN_Frequency: 0.7449856733524355,
+    Admin_Frequency: 0.7449856733524355,
     AnimaSquad_Frequency: 0.2808022922636103,
     Arsenal_Frequency: 1.1260744985673352,
     Civilian_Frequency: 1.0458452722063036,
@@ -1531,7 +1531,7 @@ export default [
   },
   {
     gamedatetime: "2023-03-06",
-    ADMIN_Frequency: 0.8062678062678063,
+    Admin_Frequency: 0.8062678062678063,
     AnimaSquad_Frequency: 0.2962962962962963,
     Arsenal_Frequency: 1.0341880341880343,
     Civilian_Frequency: 1.0797720797720798,
@@ -1561,7 +1561,7 @@ export default [
   },
   {
     gamedatetime: "2023-03-07",
-    ADMIN_Frequency: 0.764179104477612,
+    Admin_Frequency: 0.764179104477612,
     AnimaSquad_Frequency: 0.2955223880597015,
     Arsenal_Frequency: 0.9194029850746268,
     Civilian_Frequency: 1.1014925373134328,
@@ -1591,7 +1591,7 @@ export default [
   },
   {
     gamedatetime: "2023-03-08",
-    ADMIN_Frequency: 0.7058823529411765,
+    Admin_Frequency: 0.7058823529411765,
     AnimaSquad_Frequency: 0.2887700534759358,
     Arsenal_Frequency: 1.053475935828877,
     Civilian_Frequency: 1.1764705882352942,
@@ -1621,7 +1621,7 @@ export default [
   },
   {
     gamedatetime: "2023-03-09",
-    ADMIN_Frequency: 0.8252427184466019,
+    Admin_Frequency: 0.8252427184466019,
     AnimaSquad_Frequency: 0.24757281553398058,
     Arsenal_Frequency: 1.0776699029126213,
     Civilian_Frequency: 0.9757281553398058,
@@ -1651,7 +1651,7 @@ export default [
   },
   {
     gamedatetime: "2023-03-10",
-    ADMIN_Frequency: 0.8441558441558441,
+    Admin_Frequency: 0.8441558441558441,
     AnimaSquad_Frequency: 0.2727272727272727,
     Arsenal_Frequency: 0.974025974025974,
     Civilian_Frequency: 1.1818181818181819,
@@ -1681,7 +1681,7 @@ export default [
   },
   {
     gamedatetime: "2023-03-11",
-    ADMIN_Frequency: 0.9193548387096774,
+    Admin_Frequency: 0.9193548387096774,
     AnimaSquad_Frequency: 0.3024193548387097,
     Arsenal_Frequency: 1.0,
     Civilian_Frequency: 0.967741935483871,
@@ -1711,7 +1711,7 @@ export default [
   },
   {
     gamedatetime: "2023-03-12",
-    ADMIN_Frequency: 0.8504672897196262,
+    Admin_Frequency: 0.8504672897196262,
     AnimaSquad_Frequency: 0.32242990654205606,
     Arsenal_Frequency: 1.1401869158878504,
     Civilian_Frequency: 1.144859813084112,
@@ -1741,7 +1741,7 @@ export default [
   },
   {
     gamedatetime: "2023-03-13",
-    ADMIN_Frequency: 0.8841201716738197,
+    Admin_Frequency: 0.8841201716738197,
     AnimaSquad_Frequency: 0.3605150214592275,
     Arsenal_Frequency: 0.9313304721030042,
     Civilian_Frequency: 1.0085836909871244,
@@ -1771,7 +1771,7 @@ export default [
   },
   {
     gamedatetime: "2023-03-14",
-    ADMIN_Frequency: 0.9533898305084746,
+    Admin_Frequency: 0.9533898305084746,
     AnimaSquad_Frequency: 0.3347457627118644,
     Arsenal_Frequency: 0.9152542372881356,
     Civilian_Frequency: 1.0127118644067796,
@@ -1801,7 +1801,7 @@ export default [
   },
   {
     gamedatetime: "2023-03-15",
-    ADMIN_Frequency: 0.8817733990147784,
+    Admin_Frequency: 0.8817733990147784,
     AnimaSquad_Frequency: 0.2857142857142857,
     Arsenal_Frequency: 1.0098522167487685,
     Civilian_Frequency: 1.019704433497537,
@@ -1831,7 +1831,7 @@ export default [
   },
   {
     gamedatetime: "2023-03-16",
-    ADMIN_Frequency: 0.9024390243902439,
+    Admin_Frequency: 0.9024390243902439,
     AnimaSquad_Frequency: 0.3089430894308943,
     Arsenal_Frequency: 1.056910569105691,
     Civilian_Frequency: 0.9878048780487805,
@@ -1861,7 +1861,7 @@ export default [
   },
   {
     gamedatetime: "2023-03-17",
-    ADMIN_Frequency: 0.9226804123711341,
+    Admin_Frequency: 0.9226804123711341,
     AnimaSquad_Frequency: 0.28350515463917525,
     Arsenal_Frequency: 1.0103092783505154,
     Civilian_Frequency: 1.0721649484536082,
@@ -1891,7 +1891,7 @@ export default [
   },
   {
     gamedatetime: "2023-03-18",
-    ADMIN_Frequency: 1.048913043478261,
+    Admin_Frequency: 1.048913043478261,
     AnimaSquad_Frequency: 0.30978260869565216,
     Arsenal_Frequency: 0.8804347826086957,
     Civilian_Frequency: 1.1032608695652173,
@@ -1921,7 +1921,7 @@ export default [
   },
   {
     gamedatetime: "2023-03-19",
-    ADMIN_Frequency: 0.9390243902439024,
+    Admin_Frequency: 0.9390243902439024,
     AnimaSquad_Frequency: 0.32926829268292684,
     Arsenal_Frequency: 0.9451219512195121,
     Civilian_Frequency: 0.9634146341463414,
@@ -1951,7 +1951,7 @@ export default [
   },
   {
     gamedatetime: "2023-03-20",
-    ADMIN_Frequency: 1.0522875816993464,
+    Admin_Frequency: 1.0522875816993464,
     AnimaSquad_Frequency: 0.24836601307189543,
     Arsenal_Frequency: 0.869281045751634,
     Civilian_Frequency: 1.1111111111111112,
@@ -1981,7 +1981,7 @@ export default [
   },
   {
     gamedatetime: "2023-03-21",
-    ADMIN_Frequency: 1.0073529411764706,
+    Admin_Frequency: 1.0073529411764706,
     AnimaSquad_Frequency: 0.3088235294117647,
     Arsenal_Frequency: 1.0661764705882353,
     Civilian_Frequency: 1.0955882352941178,

@@ -30,7 +30,7 @@ export default [
     img: "Trait_Icon_3_Brawler",
   },
   {
-    id: "Set8_Channeler",
+    id: "Set8_Spellslinger",
     name: "Spellslinger",
     img: "Trait_Icon_8_Spellslinger",
   },
@@ -60,7 +60,7 @@ export default [
     img: "Trait_Icon_4_Duelist",
   },
   {
-    id: "Set8_ExoPrime",
+    id: "Set8_MechaPRIME",
     name: "Mecha:PRIME",
     img: "Trait_Icon_8_MechaPrime",
   },
@@ -70,7 +70,7 @@ export default [
     img: "Trait_Icon_8_Forecaster",
   },
   {
-    id: "Set8_GenAE",
+    id: "Set8_Gadgeteen",
     name: "Gadgeteen",
     img: "Trait_Icon_8_Gadgeteens",
   },
@@ -110,7 +110,7 @@ export default [
     img: "Trait_Icon_8_Renegade",
   },
   {
-    id: "Set8_SpaceCorps",
+    id: "Set8_LaserCorps",
     name: "LaserCorps",
     img: "Trait_Icon_8_Lasercorps",
   },
@@ -130,7 +130,7 @@ export default [
     img: "Trait_Icon_8_Threat",
   },
   {
-    id: "Set8_UndergroundThe",
+    id: "Set8_Underground",
     name: "Underground",
     img: "Trait_Icon_8_Underground",
   },

@@ -1,14 +1,18 @@
 import { useEffect, useState } from "react";
 import Buttons from "./Buttons";
-import {
-  Tab,
-  TabList,
-  TabPanel,
-  TabPanels,
-  Tabs,
-  Text,
-} from "@chakra-ui/react";
+import { Center, Tab, TabList, Tabs, Text } from "@chakra-ui/react";
 import getChartData from "../hooks/getChartData";
+import {
+  LineChart,
+  Line,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  ReferenceLine,
+  ResponsiveContainer,
+} from "recharts";
 
 export interface selectedButton {
   type: string;
@@ -22,72 +26,52 @@ const MainPage = () => {
     "Frequency" | "Top4Rate" | "Winrate"
   >("Frequency");
 
-  const [selectedButtonsFrequency, setSelectedButtonsFrequency] = useState<
-    selectedButton[]
-  >([]);
-  const [selectedButtonsTop4Rate, setSelectedButtonsTop4Rate] = useState<
-    selectedButton[]
-  >([]);
-  const [selectedButtonsWinRate, setSelectedButtonsWinRate] = useState<
-    selectedButton[]
-  >([]);
-  const [chartData, setChartData] = useState([]);
+  const [selectedButtons, setSelectedButtons] = useState<selectedButton[]>([]);
 
   const handleButtonClick = (buttonClicked: selectedButton) => {
-    switch (chartType) {
-      case "Frequency":
-        const isButtonSelectedFrequency = selectedButtonsFrequency.some(
-          (button) => button.value === buttonClicked.value
-        );
-        if (isButtonSelectedFrequency) {
-          setSelectedButtonsFrequency(
-            selectedButtonsFrequency.filter(
-              (button) => button.value !== buttonClicked.value
-            )
-          );
-        } else {
-          setSelectedButtonsFrequency([
-            ...selectedButtonsFrequency,
-            buttonClicked,
-          ]);
-        }
-        break;
-      case "Top4Rate":
-        const isButtonSelectedTop4Rate = selectedButtonsTop4Rate.some(
-          (button) => button.value === buttonClicked.value
-        );
-        if (isButtonSelectedTop4Rate) {
-          setSelectedButtonsTop4Rate(
-            selectedButtonsTop4Rate.filter(
-              (button) => button.value !== buttonClicked.value
-            )
-          );
-        } else {
-          setSelectedButtonsTop4Rate([
-            ...selectedButtonsTop4Rate,
-            buttonClicked,
-          ]);
-        }
-        break;
-      case "Winrate":
-        const isButtonSelectedWinRate = selectedButtonsWinRate.some(
-          (button) => button.value === buttonClicked.value
-        );
-        if (isButtonSelectedWinRate) {
-          setSelectedButtonsWinRate(
-            selectedButtonsWinRate.filter(
-              (button) => button.value !== buttonClicked.value
-            )
-          );
-        } else {
-          setSelectedButtonsWinRate([...selectedButtonsWinRate, buttonClicked]);
-        }
-        break;
+    const isButtonSelected = selectedButtons.some(
+      (button) => button.value === buttonClicked.value
+    );
+    if (isButtonSelected) {
+      setSelectedButtons(
+        selectedButtons.filter((button) => button.value !== buttonClicked.value)
+      );
+    } else {
+      setSelectedButtons([...selectedButtons, buttonClicked]);
     }
   };
 
-  const threhholdExplination =
-    "The threshold for each trait represents the minimum number of units required to activate the corresponding trait bonuses. For instance, if you have at least 2 brawlers on your board, all brawlers will receive a HP bonus";
+  const chartData = getChartData({ chartType: chartType });
+
+  const colors = [
+    "#FFA07A",
+    "#7FFFD4",
+    "#DC143C",
+    "#FFD700",
+    "#FF69B4",
+    "#ADFF2F",
+    "#D2691E",
+    "#BA55D3",
+    "#6495ED",
+    "#F0E68C",
+    "#FF6347",
+    "#008B8B",
+    "#FFDEAD",
+    "#9ACD32",
+    "#EE82EE",
+    "#48D1CC",
+    "#FFFACD",
+    "#5F9EA0",
+    "#A0522D",
+    "#7FFF00",
+    "#FFDAB9",
+    "#8A2BE2",
+    "#00FFFF",
+    "#CD853F",
+    "#8B4513",
+    "#FF4500",
+    "#2E8B57",
+  ];
 
   return (
     <div>
@@ -113,59 +97,76 @@ const MainPage = () => {
           <Tab>Top 4 Rate</Tab>
           <Tab>Win Rate</Tab>
         </TabList>
-        <TabPanels>
-          <TabPanel>
-            <h1>{chartType}</h1>
-            <h1>{threhholdExplination}</h1>
-            <Buttons onSelectButton={handleButtonClick} />
-          </TabPanel>
-          <TabPanel>
-            <h1>{chartType}</h1>
-            <h1>{threhholdExplination}</h1>
-            <Buttons onSelectButton={handleButtonClick} />
-          </TabPanel>
-          <TabPanel>
-            <h1>{chartType}</h1>
-            <h1>{threhholdExplination}</h1>
-            <Buttons onSelectButton={handleButtonClick} />
-          </TabPanel>
-        </TabPanels>
       </Tabs>
+      <Buttons onSelectButton={handleButtonClick} />
+
+      <br />
+
+      {/* <div>
+        {selectedButtons.map((button) => (
+          <p key={`${button.type}-${button.value}`}>
+            {button.value} : {button.type} : {button.id}
+          </p>
+        ))}
+      </div> */}
+      {/* insert chart here */}
+      <ResponsiveContainer width="100%" height={300}>
+        <LineChart data={chartData}>
+          {selectedButtons.map((button, index) => (
+            <Line
+              key={`${button.type}-${button.value}`}
+              type="monotone"
+              dataKey={`${button.id}_Frequency`}
+              stroke={colors[index % colors.length]}
+              dot={false}
+            />
+          ))}
+
+          {/* <Line type="monotone" dataKey="ADMIN_Frequency" /> */}
+          <CartesianGrid stroke="#ccc" />
+          <XAxis dataKey="gamedatetime" />
+          <YAxis />
+          <Tooltip />
+          <Legend />
+          <ReferenceLine
+            x="2023-01-17"
+            stroke="#FFA500"
+            label={{ value: "13.1b", position: "insideBottomRight" }}
+          />
+          <ReferenceLine
+            x="2023-01-24"
+            stroke="#FFA500"
+            label={{ value: "13.1c", position: "insideBottomRight" }}
+          />
+          <ReferenceLine
+            x="2023-02-07"
+            stroke="#FFA500"
+            label={{ value: "13.3", position: "insideBottomRight" }}
+          />
+          <ReferenceLine
+            x="2023-02-22"
+            stroke="#FFA500"
+            label={{ value: "13.4", position: "insideBottomRight" }}
+          />
+          <ReferenceLine
+            x="2023-03-07"
+            stroke="#FFA500"
+            label={{ value: "13.5", position: "insideBottomRight" }}
+          />
+        </LineChart>
+      </ResponsiveContainer>
+
       <Text align="center">
         Data set comprises 19,366 challenger games played in TFT set 8 between
         January 11th, 2023 and March 21st, 2023
       </Text>
-      <div>
-        {chartType === "Frequency" &&
-          selectedButtonsFrequency.map((button) => (
-            <p key={`${button.type}-${button.value}`}>
-              {button.value} : {button.type} : {button.id}
-            </p>
-          ))}
-        {chartType === "Top4Rate" &&
-          selectedButtonsTop4Rate.map((button) => (
-            <p key={`${button.type}-${button.value}`}>
-              {" "}
-              {button.value} : {button.type} : {button.id}
-            </p>
-          ))}
-        {chartType === "Winrate" &&
-          selectedButtonsWinRate.map((button) => (
-            <p key={`${button.type}-${button.value}`}>
-              {" "}
-              {button.value} : {button.type} : {button.id}
-            </p>
-          ))}
-      </div>
-      {/* insert chart here */}
-      {/* print chart data */}
-      <div>
-        {chartData.map((data) => (
-          <p key={`${data.gamedatetime}-${data.gamedatetime}`}>
-            {data.ADMIN_Frequency}
-          </p>
-        ))}
-      </div>
+      <br />
+      <Text align="center" fontSize="xs">
+        The threshold for each trait represents the minimum number of units
+        required to activate the corresponding trait bonuses. For instance, if
+        you have at least 2 brawlers on your board, all brawlers will receive a
+        HP bonus.
+      </Text>
     </div>
   );
 };
