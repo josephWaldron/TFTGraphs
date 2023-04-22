@@ -110,7 +110,7 @@ const MainPage = () => {
         ))}
       </div> */}
       {/* insert chart here */}
-      <ResponsiveContainer width="100%" height={300}>
+      <ResponsiveContainer width="100%" height={600}>
         <LineChart data={chartData}>
           {selectedButtons.map((button, index) => (
             <Line

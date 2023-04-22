@@ -45,7 +45,7 @@ export default [
     img: "Trait_Icon_8_Corrupted",
   },
   {
-    id: "Set8_Deadeye",
+    id: "Set8_Sureshot",
     name: "Sureshot",
     img: "Trait_Icon_8_Sureshot",
   },
