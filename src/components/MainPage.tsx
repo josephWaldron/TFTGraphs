@@ -74,7 +74,7 @@ const MainPage = () => {
   ];
 
   return (
-    <div>
+    <div style={{ margin: "20px" }}>
       <Tabs
         isFitted
         variant="enclosed"
@@ -110,6 +110,7 @@ const MainPage = () => {
         ))}
       </div> */}
       {/* insert chart here */}
+
       <ResponsiveContainer width="100%" height={600}>
         <LineChart data={chartData}>
           {selectedButtons.map((button, index) => (
@@ -121,11 +122,10 @@ const MainPage = () => {
               dot={false}
             />
           ))}
-
           {/* <Line type="monotone" dataKey="ADMIN_Frequency" /> */}
           <CartesianGrid stroke="#ccc" />
           <XAxis dataKey="gamedatetime" />
-          <YAxis />
+          <YAxis hide={true} />
           <Tooltip />
           <Legend />
           <ReferenceLine
