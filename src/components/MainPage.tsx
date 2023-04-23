@@ -153,17 +153,22 @@ const MainPage = () => {
           />
         </LineChart>
       </ResponsiveContainer>
-
-      <Text align="center">
-        Data set comprises 19,366 challenger games played in TFT set 8 between
-        January 11th, 2023 and March 21st, 2023
+      <Text align="center" fontSize="xs" color={"red"}>
+        The data has been normalized by dividing the frequency per day by the
+        number of games per day. The resulting numbers are represented on the
+        graph.
       </Text>
+
       <br />
       <Text align="center" fontSize="xs">
-        The threshold for each trait represents the minimum number of units
-        required to activate the corresponding trait bonuses. For instance, if
-        you have at least 2 brawlers on your board, all brawlers will receive a
-        HP bonus.
+        Each trait has a threshold that determines the minimum number of units
+        needed to activate the corresponding bonuses. For example, having at
+        least 2 brawlers on your board grants an HP bonus to all brawlers.
+      </Text>
+      <br />
+      <Text align="center" color="yellow">
+        Data set comprises 19,366 challenger games played in TFT set 8 between
+        January 11th, 2023 and March 21st, 2023
       </Text>
     </div>
   );
